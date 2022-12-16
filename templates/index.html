@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+{% block content %}
+<head>
+    <style>
+        td,div
+        {
+            font-size: xx-large;
+        }
+        .submit
+        {
+            font-size: x-large;
+        }
+        .INPUT
+        {
+            text-align: center;
+        }
+		.form-check
+		{
+            text-align: center;
+			background-color:  greenyellow;
+		}
+		.yvalue
+		{
+			background-color: greenyellow;
+		}
+		.analysis
+		{
+			background-color: orange;
+		}
+        body
+        {
+            background-color: azure;
+        }
+	</style>
+	<title>TECHIES</title>
+</head>
+<body>
+    <form align="center"  width = "500px" method = "POST">
+        <br><br>
+    <div class="INPUT">
+    <label class="form-label">Number of boards</label>
+	<input type="boardsl" class="form-control" id="ida" name = "ida" aria-describedby="emailHelp">
+	</div><br><br><br><br>
+        <thead><td align="center">SINGLE DATA</td></thead>
+            <tr> 
+            <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="X" value="Temperature">
+                    <label class="form-check-label">
+                      Temperature vs Timestamp
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="X" value="Humidity">
+                    <label class="form-check-label">
+                      Humidity vs Timestamp
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="X" value="gas">
+                    <label class="form-check-label">
+                      Gas vs Timestamp
+                    </label></div>
+              </td>
+            </tr>
+            <tr align="center"><td>MULTIPLE DATA</td></tr>
+            <tr> 
+                <td>
+                    <div class="analysis">
+                        <input class="form-check-input" type="radio" name="X" value="ALL">
+                        <label class="form-check-label">
+                          Get All Data
+                        </label>
+                      </div>
+                  </td>
+                </tr>
+        <tr><td colspan="3" align="center">
+            <br><br><br>
+            <button type="submit" class="submit">SUBMIT</button></tr>
+        </td></tr>
+    </form>
+</body>
+{% endblock %}
+</html>
